@@ -2,9 +2,9 @@ import { Component, OnInit } from '@angular/core';
 import { SettingsService } from '../../core/settings/settings.service';
 
 @Component({
-    selector: '[app-footer]',
-    templateUrl: './footer.component.html',
-    styleUrls: ['./footer.component.scss']
+    selector: 'App-Footer',
+    templateUrl: './Footer.component.html',
+    styleUrls: ['./Footer.component.scss']
 })
 export class FooterComponent implements OnInit {
 
