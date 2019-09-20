@@ -9,17 +9,18 @@ import { LockComponent } from './lock/lock.component';
 import { MaintenanceComponent } from './maintenance/maintenance.component';
 import { Error404Component } from './error404/error404.component';
 import { Error500Component } from './error500/error500.component';
-
+import { CVComponent } from './CV/CV.component';
 /* Use this routes definition in case you want to make them lazy-loaded */
-/*const routes: Routes = [
+const routes: Routes = [
     { path: 'login', component: LoginComponent },
     { path: 'register', component: RegisterComponent },
     { path: 'recover', component: RecoverComponent },
     { path: 'lock', component: LockComponent },
     { path: 'maintenance', component: MaintenanceComponent },
     { path: '404', component: Error404Component },
+    { path: 'Curriculum', component: CVComponent },
     { path: '500', component: Error500Component },
-];*/
+];
 
 @NgModule({
     imports: [
@@ -27,6 +28,7 @@ import { Error500Component } from './error500/error500.component';
         // RouterModule.forChild(routes)
     ],
     declarations: [
+        CVComponent,
         LoginComponent,
         RegisterComponent,
         RecoverComponent,
@@ -36,6 +38,7 @@ import { Error500Component } from './error500/error500.component';
         Error500Component
     ],
     exports: [
+        CVComponent,
         RouterModule,
         LoginComponent,
         RegisterComponent,

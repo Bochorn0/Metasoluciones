@@ -1,0 +1,14 @@
+
+.img-contenedor{
+    display: inline-block;
+    position: relative;
+    width: 400px;
+    height: 400px;
+    overflow: hidden;
+    border-radius: 50%;
+}
+.img-contenedor img {
+    width: 100%;
+    height: auto;
+    // margin-left: -50px;
+  }

@@ -1,15 +1,12 @@
 import { NgModule } from '@angular/core';
 
 import { LayoutComponent } from './layout.component';
-import { MenuComponent } from './Menu/Menu.component';
-import { ContentComponent } from './Content/Content.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
 import { HeaderComponent } from './header/header.component';
 import { NavsearchComponent } from './header/navsearch/navsearch.component';
 import { OffsidebarComponent } from './offsidebar/offsidebar.component';
 import { UserblockComponent } from './sidebar/userblock/userblock.component';
 import { UserblockService } from './sidebar/userblock/userblock.service';
-import { FooterComponent } from './Footer/Footer.component';
 
 import { SharedModule } from '../shared/shared.module';
 
@@ -21,26 +18,20 @@ import { SharedModule } from '../shared/shared.module';
         UserblockService
     ],
     declarations: [
-        MenuComponent,
-        ContentComponent,
         LayoutComponent,
         SidebarComponent,
         UserblockComponent,
         HeaderComponent,
         NavsearchComponent,
-        OffsidebarComponent,
-        FooterComponent
+        OffsidebarComponent
     ],
     exports: [
-        MenuComponent,
-        ContentComponent,
         LayoutComponent,
         SidebarComponent,
         UserblockComponent,
         HeaderComponent,
         NavsearchComponent,
-        OffsidebarComponent,
-        FooterComponent
+        OffsidebarComponent
     ]
 })
 export class LayoutModule { }

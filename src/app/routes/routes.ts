@@ -1,6 +1,7 @@
 import { LayoutComponent } from '../layout/layout.component';
 
 import { LoginComponent } from './pages/login/login.component';
+import { CVComponent } from './pages/CV/CV.component';
 import { RegisterComponent } from './pages/register/register.component';
 import { RecoverComponent } from './pages/recover/recover.component';
 import { LockComponent } from './pages/lock/lock.component';
@@ -14,9 +15,9 @@ export const routes = [
         path: '',
         component: LayoutComponent,
         children: [
-            { path: '', redirectTo: 'home', pathMatch: 'full' },
-            { path: 'home', loadChildren: './home/home.module#HomeModule' },
-            { path: 'dashboard', loadChildren: './dashboard/dashboard.module#DashboardModule' },
+            { path: '', redirectTo: 'Home', pathMatch: 'full' },
+            { path: 'Home', loadChildren: './Home/Home.module#HomeModule' },
+/*            { path: 'dashboard', loadChildren: './dashboard/dashboard.module#DashboardModule' },
             { path: 'widgets', loadChildren: './widgets/widgets.module#WidgetsModule' },
             { path: 'elements', loadChildren: './elements/elements.module#ElementsModule' },
             { path: 'forms', loadChildren: './forms/forms.module#FormsModule' },
@@ -25,12 +26,13 @@ export const routes = [
             { path: 'maps', loadChildren: './maps/maps.module#MapsModule' },
             { path: 'blog', loadChildren: './blog/blog.module#BlogModule' },
             { path: 'ecommerce', loadChildren: './ecommerce/ecommerce.module#EcommerceModule' },
-            { path: 'extras', loadChildren: './extras/extras.module#ExtrasModule' }
+            { path: 'extras', loadChildren: './extras/extras.module#ExtrasModule' }*/
         ]
     },
 
     // Not lazy-loaded routes
     { path: 'login', component: LoginComponent },
+    { path: 'Curriculum', component: CVComponent },
     { path: 'register', component: RegisterComponent },
     { path: 'recover', component: RecoverComponent },
     { path: 'lock', component: LockComponent },
@@ -39,6 +41,6 @@ export const routes = [
     { path: '500', component: Error500Component },
 
     // Not found
-    { path: '**', redirectTo: 'home' }
+    { path: '**', redirectTo: 'Home' }
 
 ];
