@@ -1,12 +1,137 @@
-<div class="container">
+<!-- <div class="container">
     <div class="row">
-        <div class="col-lg-4">
-            <div class="img-contenedor img-thumbnail" >
-                <img class="img-fluid "    style=" cursor: pointer;">
-            </div>        
+        <div class="col-lg-3">
+            <div class="contenedor_imagen">
+                <img class="img-fluid " src="../../../../assets/img/Usr.png"    style=" cursor: pointer;">
+            </div>
+            <div class="contenedor_datos">
+                <h3 class="text-center"> LUIS FERNANDO CORDOVA </h3>
+                <h4 class="text-center"> Desarrollador </h4>
+                <table class="table text-white">
+                    <tr>
+                        <td><b>Nacimiento</b> </td>
+                        <td>24/08/1991</td>
+                    </tr>
+                    <tr>
+                        <td><b>Nacionalidad</b> </td>
+                        <td>Mexicano</td>
+                    </tr>
+                    <tr>
+                        <td><b>Estado Civil</b> </td>
+                        <td>Casado</td>
+                    </tr>
+                </table>
+                <h4> Contacto </h4>
+                <table class="table text-white">
+                    <tr>
+                        <td><b>Celular</b> </td>
+                        <td>6621691999</td>
+                    </tr>
+                    <tr>
+                        <td><b>Email</b> </td>
+                        <td>luisfernandocordova.24@gmail.com </td>
+                    </tr>
+                    <tr>
+                        <td><b>Pagina web</b> </td>
+                        <td>metasoluciones.com</td>
+                    </tr>                
+                    </table>
+                <h4> Redes Sociales </h4>
+                <ul>
+                    <li> Linked In </li>
+                    <li> Twitter</li>
+                    <li> Facebook</li>
+                    <li> google Plus </li>
+                    <li> Pinterest </li>
+                </ul>
+            </div>
         </div>
-        <div class="col-lg-8">
-            DETALLES
+        <div class="col-lg-9">
+            <h3 class="separador" >Mi Perfil</h3>
+            <div class="row">
+                <div class="col-lg-4"> GRAFICA 1 </div>
+                <div class="col-lg-4"> GRAFICA 2 </div>
+                <div class="col-lg-4"> GRAFICA 3 </div>
+            </div>
+            <h3 class="separador" >Experiencia profesional</h3>
+            <div class="time_line">
+                *2019 
+                *2018
+                *2016
+            </div>
+            <h3 class="separador" >Formacion Academica</h3>
+            <div class="time_line">
+                *2019 
+                *2018
+            </div>
+            <div class="row">
+                <div class="col-lg-6">
+                    <h3 class="separador" >Software</h3>
+                </div>
+                <div class="col-lg-6">
+                    <h3 class="separador" > Idiomas </h3>
+                </div>
+            </div>
+        </div>
+    </div>
+</div> -->
+
+
+<div class="col-xl-6">
+    <h4>Radar Chart</h4>
+    <div>
+        <canvas baseChart [chartType]="'radar'" [options]="{responsive: true }" [datasets]="radar.Datos"
+            [colors]="radar.Colors" [labels]="radar.Titulos" [legend]="false" height="180"></canvas>
+    </div>
+</div>
+<div class="col-xl-6">
+    <h4>Pie Chart</h4>
+    <div>
+        <canvas baseChart [chartType]="'pie'" [options]="pieOptions" [datasets]="pieData.datasets" [colors]="pieColors"
+            [labels]="pieData.labels" [legend]="false" height="80"></canvas>
+    </div>
+</div>
+<div class="row">
+    <div class="col-lg-4">
+        <h4>Diseño</h4>
+        <div>
+            <canvas baseChart [chartType]="'doughnut'" [options]="{responsive: true }" [datasets]="donaDesign.Datos"
+                [colors]="donaDesign.Colors" [legend]="false" height="80"></canvas>
+        </div>
+    </div>
+    <div class="col-lg-4">
+        <h4>Back end</h4>
+        <div>
+            <canvas baseChart [chartType]="'doughnut'" [options]="{responsive: true }" [datasets]="donaBackend.Datos"
+                [colors]="donaBackend.Colors" [legend]="false" height="80"></canvas>
+        </div>
+    </div>
+    <div class="col-lg-4">
+        <h4>Front end</h4>
+        <div>
+            <canvas baseChart [chartType]="'doughnut'" [options]="{responsive: true }" [datasets]="donaFrontend.Datos"
+                [colors]="donaFrontend.Colors" [legend]="false" height="80"></canvas>
+        </div>
+    </div>
+    <div class="col-lg-4">
+        <h4>Manejo de Personal</h4>
+        <div>
+            <canvas baseChart [chartType]="'doughnut'" [options]="{responsive: true }" [datasets]="donaPersonal.Datos"
+                [colors]="donaPersonal.Colors" [legend]="false" height="80"></canvas>
+        </div>
+    </div>
+    <div class="col-lg-4">
+        <h4>Servidores</h4>
+        <div>
+            <canvas baseChart [chartType]="'doughnut'" [options]="{responsive: true }" [datasets]="donaServidores.Datos"
+                [colors]="donaServidores.Colors" [legend]="false" height="80"></canvas>
+        </div>
+    </div>
+    <div class="col-lg-4">
+        <h4>Soporte y redes</h4>
+        <div>
+            <canvas baseChart [chartType]="'doughnut'" [options]="{responsive: true }" [datasets]="donaSoporte.Datos"
+                [colors]="donaSoporte.Colors" [legend]="false" height="80"></canvas>
         </div>
     </div>
 </div>

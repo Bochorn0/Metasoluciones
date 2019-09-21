@@ -32,10 +32,12 @@ import { VectormapDirective } from './directives/vectormap/vectormap.directive';
 import { NowDirective } from './directives/now/now.directive';
 import { ScrollableDirective } from './directives/scrollable/scrollable.directive';
 import { JqcloudDirective } from './directives/jqcloud/jqcloud.directive';
+import { ChartsModule as Ng2ChartsModule } from 'ng2-charts/ng2-charts';
 
 // https://angular.io/styleguide#!#04-10
 @NgModule({
     imports: [
+        Ng2ChartsModule,
         CommonModule,
         FormsModule,
         ReactiveFormsModule,
@@ -103,7 +105,8 @@ import { JqcloudDirective } from './directives/jqcloud/jqcloud.directive';
         VectormapDirective,
         NowDirective,
         ScrollableDirective,
-        JqcloudDirective
+        JqcloudDirective,
+        Ng2ChartsModule,
     ]
 })
 
