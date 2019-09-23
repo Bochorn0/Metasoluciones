@@ -1,10 +1,9 @@
 import { NgModule } from '@angular/core';
-import { HomeComponent } from './Home/Home.component';
-import { ContentComponent } from './../../layout/Content/Content.component';
+import { ContactoComponent } from './Contacto.component';
 import { Routes, RouterModule } from '@angular/router';
 import { SharedModule } from '../../shared/shared.module';
 const routes: Routes = [
-    { path: '', component: HomeComponent },
+    { path: '', component: ContactoComponent },
 ];
 
 @NgModule({
@@ -12,9 +11,9 @@ const routes: Routes = [
         SharedModule,
         RouterModule.forChild(routes)
     ],
-    declarations: [HomeComponent,ContentComponent],
+    declarations: [ContactoComponent],
     exports: [
         RouterModule
     ]
 })
-export class HomeModule { }
+export class ContactoModule { }

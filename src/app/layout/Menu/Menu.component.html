@@ -1,12 +1,12 @@
 <div class="topnav {{(mostrarDatos)?'responsive':''}}" id="myTopnav">
-    <a href="#home" class="active">
+    <a [routerLink]="'/Home'"class="active">
         <img src="../../../assets/img/meta_soluciones_logo.png" />eta Soluciones
     </a>
-    <a href="#news">Inicio</a>
-    <a href="#contact">Equipo</a>
-    <a href="#contact">Portafolio</a>
-    <a href="#about">Servicios</a>
-    <a href="#about">Contacto</a>
+    <a [routerLink]="'/Home'" >Inicio</a>
+    <a [routerLink]="'/Equipo'">Equipo</a>
+    <a [routerLink]="'/Portafolio'">Portafolio</a>
+    <a [routerLink]="'/Servicios'">Servicios</a>
+    <a [routerLink]="'/Contacto'">Contacto</a>
     <a class="icon" (click)="mostrarDatos = !mostrarDatos">
         <i class="fa fa-bars"></i>
     </a>

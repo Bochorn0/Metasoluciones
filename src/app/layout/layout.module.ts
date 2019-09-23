@@ -2,6 +2,8 @@ import { NgModule } from '@angular/core';
 
 import { LayoutComponent } from './layout.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
+import { MenuComponent } from './Menu/Menu.component';
+import { FooterComponent } from './Footer/Footer.component';
 import { HeaderComponent } from './header/header.component';
 import { NavsearchComponent } from './header/navsearch/navsearch.component';
 import { OffsidebarComponent } from './offsidebar/offsidebar.component';
@@ -18,6 +20,8 @@ import { SharedModule } from '../shared/shared.module';
         UserblockService
     ],
     declarations: [
+        MenuComponent,
+        FooterComponent,
         LayoutComponent,
         SidebarComponent,
         UserblockComponent,
@@ -26,6 +30,8 @@ import { SharedModule } from '../shared/shared.module';
         OffsidebarComponent
     ],
     exports: [
+        MenuComponent,
+        FooterComponent,
         LayoutComponent,
         SidebarComponent,
         UserblockComponent,

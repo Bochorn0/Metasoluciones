@@ -1,7 +1,6 @@
 import { LayoutComponent } from '../layout/layout.component';
-
 import { LoginComponent } from './pages/login/login.component';
-import { CVComponent } from './pages/CV/CV.component';
+import { LuisCordovaComponent } from './pages/CV/Luis.cordova/Luis.cordova.component';
 import { RegisterComponent } from './pages/register/register.component';
 import { RecoverComponent } from './pages/recover/recover.component';
 import { LockComponent } from './pages/lock/lock.component';
@@ -17,6 +16,10 @@ export const routes = [
         children: [
             { path: '', redirectTo: 'Home', pathMatch: 'full' },
             { path: 'Home', loadChildren: './Home/Home.module#HomeModule' },
+            { path: 'Equipo', loadChildren: './Equipo/Equipo.module#EquipoModule' },
+            { path: 'Portafolio', loadChildren: './Portafolio/Portafolio.module#PortafolioModule' },
+            { path: 'Servicios', loadChildren: './Servicios/Servicios.module#ServiciosModule' },
+            { path: 'Contacto', loadChildren: './Contacto/Contacto.module#ContactoModule' },            
 /*            { path: 'dashboard', loadChildren: './dashboard/dashboard.module#DashboardModule' },
             { path: 'widgets', loadChildren: './widgets/widgets.module#WidgetsModule' },
             { path: 'elements', loadChildren: './elements/elements.module#ElementsModule' },
@@ -32,7 +35,7 @@ export const routes = [
 
     // Not lazy-loaded routes
     { path: 'login', component: LoginComponent },
-    { path: 'Curriculum', component: CVComponent },
+    { path: 'Curriculum/Luis_cordova', component: LuisCordovaComponent },
     { path: 'register', component: RegisterComponent },
     { path: 'recover', component: RecoverComponent },
     { path: 'lock', component: LockComponent },

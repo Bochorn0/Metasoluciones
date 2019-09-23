@@ -9,7 +9,7 @@ import { LockComponent } from './lock/lock.component';
 import { MaintenanceComponent } from './maintenance/maintenance.component';
 import { Error404Component } from './error404/error404.component';
 import { Error500Component } from './error500/error500.component';
-import { CVComponent } from './CV/CV.component';
+import { LuisCordovaComponent } from './CV/Luis.cordova/Luis.cordova.component';
 /* Use this routes definition in case you want to make them lazy-loaded */
 const routes: Routes = [
     { path: 'login', component: LoginComponent },
@@ -18,7 +18,7 @@ const routes: Routes = [
     { path: 'lock', component: LockComponent },
     { path: 'maintenance', component: MaintenanceComponent },
     { path: '404', component: Error404Component },
-    { path: 'Curriculum', component: CVComponent },
+    { path: 'Curriculum/Luis_cordova', component: LuisCordovaComponent },
     { path: '500', component: Error500Component },
 ];
 
@@ -28,7 +28,7 @@ const routes: Routes = [
         // RouterModule.forChild(routes)
     ],
     declarations: [
-        CVComponent,
+        LuisCordovaComponent,
         LoginComponent,
         RegisterComponent,
         RecoverComponent,
@@ -38,7 +38,7 @@ const routes: Routes = [
         Error500Component
     ],
     exports: [
-        CVComponent,
+        LuisCordovaComponent,
         RouterModule,
         LoginComponent,
         RegisterComponent,
