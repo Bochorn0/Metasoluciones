@@ -16,9 +16,9 @@ export class MenuComponent implements OnInit, OnDestroy {
     router: Router;
     sbclickEvent = 'click.sidebar-toggle';
     $doc: any = null;
-
+    mostrarDatos;
     constructor(public menu: MenuService, public settings: SettingsService, public injector: Injector) {
-
+        this.mostrarDatos = false;
         this.menuItems = menu.getMenu();
 
     }

@@ -1,0 +1,96 @@
+carousel.slide-animated {
+    slide.item {
+      animation-duration: 1s;
+      animation-fill-mode: both;
+      &.active {
+        width: 100%;
+        animation-name: carouselSlideIn;
+      }
+      &:not(.active) {
+        display: table-cell;
+        animation-name: carouselSlideOut;
+      }
+    }
+  }
+  // .box-carousel{
+  //   // -webkit-box-shadow: 1px 4px 15px -1px rgba(0,0,0,0.75);
+  //   // -moz-box-shadow: 1px 4px 15px -1px rgba(0,0,0,0.75);
+  //   // box-shadow: 1px 4px 15px -1px rgba(0,0,0,0.75);
+  // }
+  @keyframes carouselSlideIn {
+    0% { transform: translateX(100%); }
+    100% { transform: translateX(0); }
+  }
+  @keyframes carouselSlideOut {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-100%); }
+  }
+  .center{
+    line-height: 1.5 ;
+  }
+  .contacto_contenedor{
+    border: 0px solid rgba(84, 86, 88, 1);
+    background-color: rgba(84, 86, 88, 1);
+    border-radius: 0;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.6);
+    color: #fff;
+    padding: 15px; 
+  }
+  .titulo_contacto{
+    text-align: center;
+  }
+  .texto_contenedor{
+    padding: 0 15px;
+  }
+  .font_informacion{
+    font-size: 20px;
+  }
+  .font_detalle{
+    color: #C5C3C3;
+    text-transform:uppercase;
+  }
+  .dark{
+    background: rgba(84, 86, 88, 1) !important;
+  }
+  .dark_i{
+    border-top-color: rgba(42, 43, 44, 1) !important;
+  }
+  .icon_social{
+    margin: 0  5px;
+  }
+  .titulos_contenedor {
+    position: relative;
+    background: #519cff; color: #fff; padding: 7px;
+  }
+  .adornos {
+    position: absolute;
+    bottom: calc(-1 * (0px + 10px));
+    height: 0;
+    width: 0;
+    border: calc(0px + 10px) solid transparent;
+  }
+  .right_t{
+    border-top-color: rgba(54, 104, 169, 1);
+    border-left-width: 0;
+    right: 0;
+    bottom: -20px;
+  }
+  .left_t {
+    border-top-color: rgba(54, 104, 169, 1);
+    border-right-width: 0;
+    left: 0;
+      bottom: -20px;
+  }
+  .min-wi{
+    min-width: 30px;
+    color: #666;
+  }
+  
+  @media screen and (max-width: 1000px) {
+    .contacto_contenedor{
+      margin-top: 10px;
+    }
+    .titulos_contenedor{
+      margin-top: 10px;
+    }
+  }
