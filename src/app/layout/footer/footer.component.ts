@@ -3,8 +3,8 @@ import { SettingsService } from '../../core/settings/settings.service';
 
 @Component({
     selector: 'App-Footer',
-    templateUrl: './Footer.component.html',
-    styleUrls: ['./Footer.component.scss']
+    templateUrl: './footer.component.html',
+    styleUrls: ['./footer.component.scss']
 })
 export class FooterComponent implements OnInit {
 

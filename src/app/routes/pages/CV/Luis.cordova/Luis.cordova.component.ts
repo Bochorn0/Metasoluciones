@@ -27,49 +27,23 @@ export class LuisCordovaComponent implements OnInit {
   }*/
 
   radar = {
-    Titulos: ['Javascript', 'PHP', 'Nodejs', 'HTML y CSS', 'Mysql', 'Angular', 'SQLServer', 'SCRUM', 'Microsoft Team Foundation', 'Mongodb'],
+    Titulos: ['(0 - 10)','FrontEnd DEV (HTML5, Angular, React, Javascript)', 'BackEnd DEV (Nodejs, PHP)','SCRUM (Microsoft TFS, Jira, Assana)', 'UI Tools ( Figma, API documentation, Sitemaps)', 'DB Management (SQLServer, Mysql, MongoDB, ORM)'],
     Datos: [
       {
-        label: 'Años Experiencia',
-        data: [6, 6, 3, 8, 8, 3, 2, 2, 2, 2]
+        label: 'Experience Years ',
+        data: [7,8, 7, 7, 6, 8]
       }, {
-        label: 'Dominio',
-        data: [8, 8, 9, 10, 9, 8, 8, 8, 7, 3]
+        label: 'Domain',
+        data: [10,9, 10, 8, 8, 9]
       }, {
-        label: 'Desarrollos Profesionales',
-        data: [7, 10, 10, 10, 9, 7, 5, 5, 2, 1]
-      }
-    ],
-    Colors: [
-      {
-        backgroundColor: 'rgba(114,102,186,0.2)',
-        borderColor: 'rgba(114,102,186,1)',
-        pointColor: 'rgba(114,102,186,1)',
-        pointBorderColor: '#fff',
-        pointHoverBackgroundColor: '#fff',
-        pointHoverBorderColor: 'rgba(114,102,186,1)'
-      }, {
-        backgroundColor: 'rgba(151,187,205,0.2)',
-        borderColor: 'rgba(151,187,205,1)',
-        pointColor: 'rgba(151,187,205,1)',
-        pointBorderColor: '#fff',
-        pointHoverBackgroundColor: '#fff',
-        pointHoverBorderColor: 'rgba(151,187,205,1)'
-      }, {
-        backgroundColor: ' rgba(68, 175, 255, 0.5)',
-        borderColor: '#0195c3',
-        pointColor: '#23b7e5',
-        pointBorderColor: '#fff',
-        pointHoverBackgroundColor: '#fff',
-        pointHoverBorderColor: 'rgba(151,187,205,1)'
-      }, {
-        backgroundColor: 'rgba(224, 38, 30, 0.8)',
-        borderColor: '#c00',
-        pointColor: '#c00',
-        pointBorderColor: '#fff',
-        pointHoverBackgroundColor: '#fff',
-        pointHoverBorderColor: 'rgba(151,187,205,1)'
-      }]
+        label: 'App implementation',
+        data: [10,9, 10, 6, 6, 9]
+      },
+       {
+        label: 'Project maintenance EXP',
+        data: [2,7, 8, 7, 8, 9]
+      },
+    ]
   };
 
   constructor(public colors: ColorsService) { }

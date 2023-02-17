@@ -15,7 +15,7 @@ export const routes = [
         component: LayoutComponent,
         children: [
             { path: '', redirectTo: 'Home', pathMatch: 'full' },
-            { path: 'Home', loadChildren: './Home/Home.module#HomeModule' },
+            { path: 'Home', loadChildren: './home/home.module#HomeModule' },
             { path: 'Equipo', loadChildren: './Equipo/Equipo.module#EquipoModule' },
             { path: 'Portafolio', loadChildren: './Portafolio/Portafolio.module#PortafolioModule' },
             { path: 'Servicios', loadChildren: './Servicios/Servicios.module#ServiciosModule' },
